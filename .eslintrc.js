@@ -12,5 +12,5 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-  rules: { "react/prop-types": "warn" },
+  rules: {},
 };
