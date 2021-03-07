@@ -7,6 +7,7 @@ const AddTask = () => {
   const onSubmit = (event) => {
     db.tasks.add({ name: task });
     event.preventDefault();
+    setTask("");
   };
 
   return (
