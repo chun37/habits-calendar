@@ -5,6 +5,7 @@ const AddTask = () => {
   const [task, setTask] = useState();
 
   const onSubmit = (event) => {
+    if (!task) return;
     db.tasks.add({ name: task });
     event.preventDefault();
     setTask("");
