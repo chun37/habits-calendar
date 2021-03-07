@@ -1,6 +1,6 @@
 import React from "react";
 import { useLiveQuery } from "dexie-react-hooks";
-import db from "../db";
+import db from "../../db";
 import TaskDeleteButton from "./taskDeleteButton";
 
 const TaskItem = (props) => {

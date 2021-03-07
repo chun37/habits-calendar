@@ -1,5 +1,5 @@
 import React from "react";
-import db from "../db";
+import db from "../../db";
 
 const TaskDeleteButton = (props) => {
   const { id } = props;
