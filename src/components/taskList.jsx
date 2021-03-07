@@ -1,6 +1,17 @@
 import React from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import db from "../db";
+import TaskDeleteButton from "./taskDeleteButton";
+
+const TaskItem = (props) => {
+  const { name, id } = props;
+  return (
+    <li>
+      {name}
+      <TaskDeleteButton id={id} />
+    </li>
+  );
+};
 
 const TaskList = () => {
   const tasks = useLiveQuery(() => db.tasks.toArray());
@@ -9,7 +20,7 @@ const TaskList = () => {
   return (
     <ul>
       {tasks.map((task) => (
-        <li key={task.id}>{task.name}</li>
+        <TaskItem key={task.id} name={task.name} id={task.id} />
       ))}
     </ul>
   );
