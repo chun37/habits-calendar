@@ -15,7 +15,7 @@ const TaskItem = (props) => {
 
 const TaskList = () => {
   const tasks = useLiveQuery(() => db.tasks.toArray());
-  if (!tasks) return <p>タスク無し</p>;
+  if (!tasks || tasks.length === 0) return <p>タスク無し</p>;
 
   return (
     <ul>
