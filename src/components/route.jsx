@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import Home from "./home";
 import Settings from "./settings";
 
 const Routing = () => (
@@ -12,7 +13,5 @@ const Routing = () => (
     </Route>
   </Switch>
 );
-
-const Home = () => <h2>Home</h2>;
 
 export default Routing;
