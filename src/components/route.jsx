@@ -8,7 +8,7 @@ const Routing = () => (
     <Route path="/" exact>
       <Home />
     </Route>
-    <Route path="/settings">
+    <Route path="/settings" exact>
       <Settings />
     </Route>
   </Switch>
