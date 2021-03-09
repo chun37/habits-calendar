@@ -1,14 +1,9 @@
 import Dexie from "dexie";
 
-class DB extends Dexie {
-  constructor() {
-    super("TaskDB");
-    this.version(1).stores({
-      tasks: `++id,name`,
-    });
-  }
-}
-
-const db = new DB();
+const db = new Dexie("myDB");
+db.version(2).stores({
+  tasks: `++id, name`,
+  clearTask: `++id, taskid, date`,
+});
 
 export default db;
