@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/navigation.scss";
 
 const Navigation = () => (
   <nav>
-    <ul>
+    <ul className="navigation">
       <li key="home">
         <Link to="/">Home</Link>
       </li>
