@@ -7,10 +7,13 @@ const ClearCalendar = () => {
 
   return (
     <div>
-      <TaskSelector setTaskId={setTaskId} />
-      <Calendar taskId={taskId} />
+      <h2>Calendar</h2>
+      <div>
+        <TaskSelector setTaskId={setTaskId} />
+        <Calendar taskId={taskId} />
+      </div>
     </div>
   );
-};
+}
 
 export default ClearCalendar;
