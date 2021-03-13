@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import db from "../../db";
 
 const AddTask = () => {
-  const [task, setTask] = useState();
+  const [task, setTask] = useState("");
 
   const addTask = () => {
     if (!task) return;
