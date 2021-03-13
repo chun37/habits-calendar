@@ -12,4 +12,16 @@ const stringToDate = (dateString) => {
   return new Date(year, month - 1, day);
 };
 
-export { dateToString, stringToDate };
+const zeroPadding = (int, maxLength) => String(int).padStart(maxLength, "0");
+
+const range = (start, end) =>
+  Array(end - start)
+    .fill(0)
+    .map((_, index) => start + index);
+
+const chunk = (arr, size) =>
+  arr.reduce(
+    (newarr, _, i) => (i % size ? newarr : [...newarr, arr.slice(i, i + size)]),
+    []
+  );
+export { dateToString, stringToDate, zeroPadding, range, chunk };
