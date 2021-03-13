@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navigation from "./navigation";
-import Routing from "./route";
+import Navigation from "./Navigation";
+import Routing from "./Route";
 
 const App = () => (
   <Router>

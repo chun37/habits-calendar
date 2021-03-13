@@ -2,8 +2,8 @@ import { useLiveQuery } from "dexie-react-hooks";
 import React, { useState } from "react";
 import db from "../../db";
 import { zeroPadding } from "../utils";
-import DateTable from "./dateTable";
-import MonthSelector from "./monthSelector";
+import DateTable from "./DateTable";
+import MonthSelector from "./MonthSelector";
 
 const Calendar = (props) => {
   const { taskId } = props;

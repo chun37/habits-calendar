@@ -1,7 +1,7 @@
 import { useLiveQuery } from "dexie-react-hooks";
 import React from "react";
 import db from "../../db";
-import TaskToggle from "./taskToggle";
+import TaskToggle from "./TaskToggle";
 
 const TaskTable = (props) => {
   const { dateString } = props;

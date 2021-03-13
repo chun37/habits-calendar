@@ -1,5 +1,5 @@
 import React from "react";
-import CompleteTable from "./completeTable";
+import CompleteTable from "./CompleteTable";
 
 const Home = () => (
   <div>

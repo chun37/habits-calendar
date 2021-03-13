@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { dateToString } from "../utils";
-import DateSelector from "./dateSelector";
-import TaskTable from "./taskTable";
+import DateSelector from "./DateSelector";
+import TaskTable from "./TaskTable";
 
 const CompleteTable = () => {
   const [dateString, setDateString] = useState(dateToString(new Date()));

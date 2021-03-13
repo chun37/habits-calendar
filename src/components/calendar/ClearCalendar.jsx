@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Calendar from "./calendar";
-import TaskSelector from "./taskSelector";
+import Calendar from "./Calendar";
+import TaskSelector from "./TaskSelector";
 
 const ClearCalendar = () => {
   const [taskId, setTaskId] = useState(0);

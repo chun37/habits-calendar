@@ -1,6 +1,6 @@
 import React from "react";
-import AddTask from "./taskForm";
-import TaskList from "./taskList";
+import AddTask from "./TaskForm";
+import TaskList from "./TaskList";
 
 const Settings = () => (
   <div>

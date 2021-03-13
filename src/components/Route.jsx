@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Calendar from "./calendar";
+import Calendar from "./calendar/ClearCalendar";
 import Home from "./home/Home";
 import Settings from "./settings/Settings";
 
