@@ -6,7 +6,7 @@ const ClearCalendar = () => {
   const [taskId, setTaskId] = useState(0);
 
   return (
-    <div>
+    <div className="main">
       <h2>Calendar</h2>
       <div>
         <TaskSelector setTaskId={setTaskId} />
@@ -14,6 +14,6 @@ const ClearCalendar = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ClearCalendar;

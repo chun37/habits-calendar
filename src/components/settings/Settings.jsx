@@ -3,7 +3,7 @@ import AddTask from "./TaskForm";
 import TaskList from "./TaskList";
 
 const Settings = () => (
-  <div>
+  <div className="main">
     <h2>Settings</h2>
     <AddTask />
     <TaskList />
