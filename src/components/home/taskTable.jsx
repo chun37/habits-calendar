@@ -18,14 +18,18 @@ const TaskTable = (props) => {
   console.log("today's clear", clear);
   const clearIds = clear.map((item) => item.taskid);
 
-  return tasks.map((task) => (
-    <TaskToggle
-      key={task.id}
-      task={task}
-      dateString={dateString}
-      isClear={clearIds.includes(task.id)}
-    />
-  ));
+  return (
+    <ul>
+      {tasks.map((task) => (
+        <TaskToggle
+          key={task.id}
+          task={task}
+          dateString={dateString}
+          isClear={clearIds.includes(task.id)}
+        />
+      ))}
+    </ul>
+  );
 };
 
 export default TaskTable;
