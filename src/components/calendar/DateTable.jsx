@@ -3,12 +3,8 @@ import { zeroPadding, range, chunk } from "../utils";
 
 const DateCell = (props) => {
   const { date, isClear } = props;
-  return (
-    <div className="calendar-day">
-      {date}
-      {isClear ? "o" : ""}
-    </div>
-  );
+  const className = isClear ? "calendar-day clear" : "calendar-day";
+  return <div className={className}>{date}</div>;
 };
 const WeekCell = (props) => {
   const { children } = props;
