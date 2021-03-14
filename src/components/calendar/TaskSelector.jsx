@@ -16,7 +16,7 @@ const TaskSelector = (props) => {
 
   return (
     <div>
-      <select onChange={onTaskUpdate} size={tasks.length}>
+      <select onChange={onTaskUpdate}>
         {tasks.map((task) => (
           <option key={task.id} value={task.id}>
             {task.name}
