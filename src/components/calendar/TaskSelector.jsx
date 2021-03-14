@@ -12,7 +12,7 @@ const TaskSelector = (props) => {
 
   if (!tasks || tasks.length === 0) return <p>タスク無し</p>;
 
-  setTaskId(tasks[0].id);
+  setTaskId(tasks[0].id); // FIXME: 警告がでる
 
   return (
     <div>
