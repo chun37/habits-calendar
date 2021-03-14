@@ -4,7 +4,7 @@ import { zeroPadding, range, chunk } from "../utils";
 const DateCell = (props) => {
   const { date, isClear } = props;
   return (
-    <div>
+    <div className="calendar-day">
       {date}
       {isClear ? "o" : ""}
     </div>
@@ -12,7 +12,7 @@ const DateCell = (props) => {
 };
 const WeekCell = (props) => {
   const { children } = props;
-  return <div>{children}</div>;
+  return <div className="calendar-week">{children}</div>;
 };
 
 const DateTable = (props) => {

@@ -1,0 +1,13 @@
+.calendar-week {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.calendar-day {
+  width: auto;
+  min-width: 14.2%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 10vh;
+}

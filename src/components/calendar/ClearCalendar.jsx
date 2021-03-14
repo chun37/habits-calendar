@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Calendar from "./Calendar";
 import TaskSelector from "./TaskSelector";
+import "../../css/calendar.scss";
 
 const ClearCalendar = () => {
   const [taskId, setTaskId] = useState(0);
