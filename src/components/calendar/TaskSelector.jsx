@@ -12,6 +12,8 @@ const TaskSelector = (props) => {
 
   if (!tasks || tasks.length === 0) return <p>タスク無し</p>;
 
+  setTaskId(tasks[0].id);
+
   return (
     <div>
       <select onChange={onTaskUpdate} size={tasks.length}>
