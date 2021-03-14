@@ -1,0 +1,39 @@
+.task-status {
+  list-style-type: none;
+  li {
+    height: 10vh;
+    display: flex;
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="checkbox"] {
+      opacity: 0;
+      appearance: none;
+
+      &:checked + .toggle {
+        background-image: url("../check.svg");
+        background-size: contain;
+        border: 2px solid rgb(0, 128, 255);
+      }
+    }
+
+    .toggle {
+      box-sizing: border-box;
+      flex-shrink: 0;
+      display: inline-block;
+      // content: "";
+      width: 5vh;
+      height: 5vh;
+      border: 2px solid gray;
+    }
+
+    span {
+      display: block;
+      max-height: 10vh;
+      overflow: hidden;
+    }
+  }
+}

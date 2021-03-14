@@ -1,5 +1,6 @@
 import React from "react";
 import CompleteTable from "./CompleteTable";
+import "../../css/home.scss";
 
 const Home = () => (
   <div className="main">

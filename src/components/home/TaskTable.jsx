@@ -19,7 +19,7 @@ const TaskTable = (props) => {
   const clearIds = clear.map((item) => item.taskid);
 
   return (
-    <ul>
+    <ul className="task-status">
       {tasks.map((task) => (
         <TaskToggle
           key={task.id}

@@ -19,8 +19,11 @@ const TaskToggle = (props) => {
 
   return (
     <li>
-      {task.name}
-      <input type="checkbox" onChange={onToggle} checked={isClear} />
+      <label>
+        <input type="checkbox" onChange={onToggle} checked={isClear} />
+        <div className="toggle" />
+        <span>{task.name}</span>
+      </label>
     </li>
   );
 };
