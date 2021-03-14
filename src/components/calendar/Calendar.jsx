@@ -16,7 +16,7 @@ const Calendar = (props) => {
   );
 
   console.log(taskId, clear);
-  if (!clear || clear.length === 0) return <p>タスク無し</p>;
+  if (!clear) return <p>タスク無し</p>;
 
   return (
     <div>
